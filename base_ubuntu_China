@@ -1,0 +1,6 @@
+FORM ubuntu:lastest
+MAINTAINER greekone
+ADD sources.list /etc/apt/sources.list
+RUN ["apt-get", "update", "-yqq"]
+RUN ["apt-get", "install", "vim", "-yqq"]
+RUN ["apt-get", "install", "net-tools", "-yqq"]
